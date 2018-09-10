@@ -1,0 +1,186 @@
+/* RED-NEW – 21 MAJ 2018
+- - - - - - - - - - - - - - - - - */
+
+/* COOKIE BANNER – top style
+-------------------------- */
+
+.cookie-notice {
+	right: 0;
+  text-align: center;
+  padding: 10px !important;
+  line-height: 1.2em !important;
+  font-size: 13px !important;
+  position: fixed !important;
+  background: rgba(255,255,255,0.95) !important; 
+  color: @grey-dark !important;
+  border-bottom-width: 0 !important; 
+    
+}
+
+.cookie-notice p {
+  display:inline-block;
+}
+
+.cookie-notice br {
+  display:none;
+}
+
+.cookie-notice button {
+  margin-left: 10px;
+  line-height: 1;
+  display:inline-block;
+  text-transform: uppercase;
+  padding: 10px !important;
+  font-weight: bold;
+  border: none;
+  background: #FFF;
+  color: #000; 
+  transition: @transition;
+&:hover {
+  opacity: @opacity-low;  
+  }
+}
+
+
+
+/* FIXED FOOTER
+-------------------------- */
+
+body:not(.sqs-edit-mode-active) .Site-inner {
+    margin-bottom: 100vh
+}
+body:not(.sqs-edit-mode-active) .Footer {
+	position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0px;
+  left: 0px;
+  z-index: -11;
+  background-color:transparent;
+ // pointer-events: none;
+  background-color: #FFF;
+}
+
+
+#section-4 {
+  background-color: #4A2C87
+}
+
+
+
+/* TYPOGRAPHY
+-------------------------- */
+
+.Index-page--has-image h1 a {
+	border-bottom-width: 0;
+	padding-bottom: 0;
+}
+
+
+
+/* SUMMARY MEDIUM SETTINGS
+-------------------------- */
+.summary-block-setting-text-size-medium {
+ 
+// DIV  
+.summary-content {
+  //background: #999;
+  padding: 10px;
+}
+
+// EXCERPT - text
+.summary-excerpt p {
+  font-size: .5em;
+  color: #000;
+}
+  
+// EXCERPT - text link
+.summary-excerpt p a {
+  color: red;
+  opacity: 1;
+}
+
+// EXCERPT - text link - hover
+.summary-excerpt p a:hover {
+  opacity: 0.7;
+}
+
+// TITLE
+.summary-title {
+	font-family: @meta;
+	font-weight: 600;
+  font-size: 24px !important;
+  text-align: right;
+  color: #FFF;
+}
+
+// METADATA  
+.summary-metadata-item {
+  color: #000;
+  text-transform: uppercase;
+}
+
+// IMG
+.summary-thumbnail-container  {
+	transition: @transition-slow;
+  opacity: @opacity-low;
+}
+  
+// IMG - hover
+.summary-thumbnail-container:hover {
+  opacity: @opacity !important;
+}
+}
+
+
+/* LESS
+- - - - - - - - - - - - - - - - - */
+
+.anti {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+// FONTS
+@main: "acta-display",serif;
+@body:  "acumin-pro", sans-serif;
+@meta: "acumin-pro", sans-serif;
+
+// @MEDIA
+@480: ~"only screen and (max-width: 480px)";
+@640: ~"only screen and (max-width: 640px)";
+@768: ~"only screen and (max-width: 768px)";
+@1024: ~"only screen and (max-width: 1024px)";
+
+// MIN
+@768min: ~"only screen and (min-width: 768px)";
+
+// COLORS
+@text: #5f5f5f;
+@decor: #717779;
+@logo: #4934EC;
+@grey: #999;
+@grey-ultra: #F9F9F9;
+@grey-light: #EBEBEB;
+@grey-dark: #8f8f8f;
+@bg: #F3F4F3;
+@line: rgba(200,200,200,.35);
+
+
+// SPACING
+@spacing-ultra-loose: .1em;
+@spacing-medium: 0.02em;
+@spacing-loose: .1em;
+@spacing: 0;
+@spacing-tight: -.03em;
+
+// OPACITY
+@opacity-low: 0.4;
+@opacity: 1;
+@opacity-high: 0.85;
+
+// TRANSITIONS
+@transition-fast: all 0.3s @ease;
+@transition: all 0.5s @ease;
+@transition-slow: all 0.8s @ease;
+@ease: ease;
